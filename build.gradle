@@ -15,9 +15,11 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-jooq'
+	implementation 'org.flywaydb:flyway-core'
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.zonky.test:embedded-database-spring-test:2.1.0'
+	testImplementation 'org.flywaydb.flyway-test-extensions:flyway-spring-test:7.0.0'
 }
 
 test {
